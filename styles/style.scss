@@ -1,0 +1,65 @@
+$color: #020636;
+$hover: #d65123;
+$bgH: #f8f0e3;
+nav {
+    background-color: $bgH;
+    padding: 1em!important;
+    .navbar-nav {
+        margin: 0 auto;
+
+        .h6 {
+            font-size: 20px;
+            font-weight: 700;
+            color: $color !important;
+            &:hover {
+                color: $hover !important;
+            }
+        }
+        .right{
+            @media screen and (max-width:1200px) {
+                padding-left: 4vw!important;
+            }
+        }
+        .left {
+            padding-left: 4vw !important;
+        }
+    }
+    form{
+        @media screen and (max-width:800px) {
+            flex-direction: column;
+        }
+        .playstore {
+            border: 1px solid $color;
+            background: $color;
+            padding:  1vh 2vw;
+            align-items: center;
+            line-height: 20px;
+            color: white;
+            border-radius: 15px;
+            font-weight: 700;
+            &:hover{
+                color: $hover!important;;
+            }
+            @media screen and (max-width:800px) {
+                margin-bottom: 3vh;
+                width: 65%;
+            }
+        }
+        .applestore{
+            border: 1px solid $color;
+            background: $bgH;
+            align-items: center;
+            line-height: 20px;
+            padding:  1vh 2vw;
+            color: $color;
+            border-radius: 15px;
+            font-weight: 700;
+            &:hover{
+                color: $hover!important;;
+            }
+            @media screen and (max-width:800px) {
+                width: 65%;
+            }
+        }
+    }
+}

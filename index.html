@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,50 @@
     <link rel="stylesheet" href="/styles/css/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/style.css">
 </head>
+
 <body>
-    <h1 class="text-center">Look At Me</h1>
+    <nav class="navbar navbar-expand-xl navbar-light ">
+        <div class="container">
+            <img src="/styles/img/logo.svg" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link h6 right" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h6 left" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h6 left">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h6 left">FAQ</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn playstore me-4 nav" type="button">
+                        <div class="me-3"><img src="/styles/img/goggleplaystore.svg" alt="goggleplaystore"></div>
+                        <div>
+                            Download <br/>
+                            on Android
+                        </div>
+                    </button>
+                    <button class="btn applestore  nav" type="button">
+                        <div class="me-3"><img src="/styles/img/appleplaystore.svg" alt="appleplaystore"></div>
+                        <div>
+                            Download <br/>
+                            on Apple
+                        </div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <script src="/styles/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>

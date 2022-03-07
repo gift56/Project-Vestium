@@ -1,1 +1,85 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+nav {
+  background-color: #f8f0e3;
+  padding: 1em !important;
+}
+
+nav .navbar-nav {
+  margin: 0 auto;
+}
+
+nav .navbar-nav .h6 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #020636 !important;
+}
+
+nav .navbar-nav .h6:hover {
+  color: #d65123 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  nav .navbar-nav .right {
+    padding-left: 4vw !important;
+  }
+}
+
+nav .navbar-nav .left {
+  padding-left: 4vw !important;
+}
+
+@media screen and (max-width: 800px) {
+  nav form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+nav form .playstore {
+  border: 1px solid #020636;
+  background: #020636;
+  padding: 1vh 2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20px;
+  color: white;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+nav form .playstore:hover {
+  color: #d65123 !important;
+}
+
+@media screen and (max-width: 800px) {
+  nav form .playstore {
+    margin-bottom: 3vh;
+    width: 65%;
+  }
+}
+
+nav form .applestore {
+  border: 1px solid #020636;
+  background: #f8f0e3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20px;
+  padding: 1vh 2vw;
+  color: #020636;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+nav form .applestore:hover {
+  color: #d65123 !important;
+}
+
+@media screen and (max-width: 800px) {
+  nav form .applestore {
+    width: 65%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
