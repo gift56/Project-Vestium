@@ -4,3 +4,4 @@
 #first section finished
 #Finished section 3
 #Finished section 4
+#Finished footer
