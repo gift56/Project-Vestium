@@ -151,6 +151,13 @@ nav form .applestore:hover {
   color: #d65123;
 }
 
+.first-section .row h1 .dress {
+  border: 1px solid #d65123;
+  padding: 10px;
+  color: #F8F0e3;
+  border-radius: 80%;
+}
+
 @media screen and (max-width: 1000px) {
   .first-section .row h1 {
     font-size: 28px;
@@ -166,6 +173,10 @@ nav form .applestore:hover {
   .first-section .row p {
     font-size: 11px;
   }
+}
+
+.first-section .row form {
+  padding-bottom: 12vh;
 }
 
 .first-section .row form .applestore {
@@ -266,7 +277,7 @@ nav form .applestore:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  bottom: 2px;
+  bottom: 30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -293,6 +304,14 @@ nav form .applestore:hover {
   font-weight: 700;
 }
 
+.second-section .bottom {
+  margin-bottom: 20vh;
+}
+
+.second-section form {
+  padding-bottom: 12vh;
+}
+
 .second-section form .applestore {
   border: 1px solid #020636;
   background: #020636;
@@ -308,7 +327,6 @@ nav form .applestore:hover {
 
 .second-section form .applestore:hover {
   color: #d65123 !important;
-  background-color: bisque;
 }
 
 @media screen and (max-width: 800px) {
@@ -341,6 +359,135 @@ nav form .applestore:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+.second-section .texts .middle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-section .texts .middle .h1 {
+  font-weight: 600;
+  color: #020636 !important;
+}
+
+.second-section .texts .p {
+  font-size: 18px;
+  color: #020636;
+  font-weight: 600;
+}
+
+.second-section .texts .check {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-section .texts .button {
+  background-color: #020636;
+  padding: 1em 53px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.second-section .texts .button:hover {
+  background-color: #3240df;
+  color: black !important;
+}
+
+.third-section {
+  background-color: #020636;
+  color: #F8F0e3;
+  background-image: url(/styles/img/bg3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 42px -230px;
+  z-index: 99;
+}
+
+@media screen and (max-width: 900px) {
+  .third-section {
+    background-position: -548px -148px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .third-section .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 900px) {
+  .third-section .flex .img-fluid {
+    margin-right: 29vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .third-section form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.third-section form .playstore {
+  border: 1px solid #020636;
+  background: #d65123;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20px;
+  padding: 1vh 2vw;
+  color: white;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+.third-section form .playstore:hover {
+  color: #020636 !important;
+}
+
+@media screen and (max-width: 800px) {
+  .third-section form .playstore {
+    width: 90%;
+    margin-right: 0px !important;
+  }
+}
+
+.third-section form .applestore {
+  border: 1px solid #020636;
+  background: #F8F0e3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20px;
+  padding: 1vh 2vw;
+  color: #020636;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+.third-section form .applestore:hover {
+  color: #d65123 !important;
+}
+
+@media screen and (max-width: 800px) {
+  .third-section form .applestore {
+    width: 93%;
+    margin-top: 13px !important;
+  }
+  .third-section form .applestore .app {
+    padding-left: 5vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

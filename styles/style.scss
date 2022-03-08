@@ -109,6 +109,12 @@ nav {
             span {
                 color: $hover;
             }
+            .dress {
+                border: 1px solid $hover;
+                padding: 10px;
+                color: $bgH;
+                border-radius: 80%;
+            }
             @media screen and (max-width: 1000px) {
                 font-size: 28px;
             }
@@ -122,6 +128,7 @@ nav {
         }
 
         form {
+            padding-bottom: 12vh;
             .applestore {
                 border: 1px solid $color;
                 background: $hover;
@@ -173,22 +180,22 @@ nav {
 .second-section {
     background-color: $bgH;
     color: $color;
-    .phone{
+    .phone {
         position: relative;
 
-        img{
+        img {
             position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;
-            bottom: 2px;
+            bottom: 30px;
         }
-        @media screen and (max-width:1200px) {
-           img{
-            width: 66vw;
-            position: relative;
-            bottom: 45px;
-           }
+        @media screen and (max-width: 1200px) {
+            img {
+                width: 66vw;
+                position: relative;
+                bottom: 45px;
+            }
         }
     }
     .nav {
@@ -206,7 +213,11 @@ nav {
             font-weight: 700;
         }
     }
+    .bottom {
+        margin-bottom: 20vh;
+    }
     form {
+        padding-bottom: 12vh;
         .applestore {
             border: 1px solid $color;
             background: $color;
@@ -218,13 +229,11 @@ nav {
             font-weight: 700;
             &:hover {
                 color: $hover !important;
-                background-color: bisque;
             }
-            @media screen and (max-width:800px) {
+            @media screen and (max-width: 800px) {
                 width: 92%;
-                margin-top: 3vh!important;
+                margin-top: 3vh !important;
             }
-           
         }
         .playstore {
             border: 1px solid $hover;
@@ -238,11 +247,110 @@ nav {
             &:hover {
                 color: white !important;
             }
-            
         }
         @media screen and (max-width: 800px) {
             flex-direction: column;
         }
+    }
 
+    .texts {
+        .middle {
+            align-items: center;
+
+            .h1 {
+                font-weight: 600;
+                color: $color !important;
+            }
+        }
+        .p {
+            font-size: 18px;
+            color: $color;
+            font-weight: 600;
+        }
+
+        .check{
+            align-items: center;
+
+        }
+        .button{
+            background-color: $color;
+            padding: 1em 53px;
+            font-size: 20px;
+            border-radius: 10px;
+            &:hover{
+                background-color: #3240df;
+                color: black !important;
+            }
+        }
+    }
+}
+
+.third-section{
+    background-color: $color;
+    color: $bgH;
+    background-image: url(/styles/img/bg3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 42px -230px;
+    z-index: 99;
+    @media screen and (max-width:900px) {
+        background-position: -548px -148px;
+    }
+    .flex{
+        @media screen and (max-width:900px) {
+            display: flex;
+            flex-direction: column-reverse;
+        .img-fluid{
+            @media screen and (max-width:900px) {
+                margin-right: 29vw;
+            }
+        }
+        }
+    }
+
+    form{
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+
+        .playstore{
+            border: 1px solid $color;
+            background: $hover;
+            align-items: center;
+            line-height: 20px;
+            padding: 1vh 2vw;
+            color: white;
+            border-radius: 15px;
+            font-weight: 700;
+            &:hover {
+                color: $color !important;
+            }
+            @media screen and (max-width: 800px) {
+                width: 90%;
+                margin-right: 0px!important;
+            }
+        }
+
+        .applestore{
+            border: 1px solid $color;
+            background: $bgH;
+            align-items: center;
+            line-height: 20px;
+            padding: 1vh 2vw;
+            color: $color;
+            border-radius: 15px;
+            font-weight: 700;
+            &:hover {
+                color: $hover !important;
+            }
+            @media screen and (max-width: 800px) {
+                width: 93%;
+                margin-top: 13px!important;
+
+                .app{
+                    padding-left: 5vw;
+                }
+            }
+        }
     }
 }
