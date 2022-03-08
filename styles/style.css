@@ -490,4 +490,25 @@ nav form .applestore:hover {
     padding-left: 5vw;
   }
 }
+
+.forth-section {
+  background-color: #F8F0e3;
+}
+
+.forth-section .container .row .h1 {
+  color: #020636;
+}
+
+.forth-section .container .accordion-item {
+  background-color: #F8F0e3;
+  font-size: 25px;
+  border: 2px solid #f3ebde;
+}
+
+.forth-section .container .accordion-item:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #fdbd55;
+}
 /*# sourceMappingURL=style.css.map */

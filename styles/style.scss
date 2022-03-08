@@ -268,16 +268,15 @@ nav {
             font-weight: 600;
         }
 
-        .check{
+        .check {
             align-items: center;
-
         }
-        .button{
+        .button {
             background-color: $color;
             padding: 1em 53px;
             font-size: 20px;
             border-radius: 10px;
-            &:hover{
+            &:hover {
                 background-color: #3240df;
                 color: black !important;
             }
@@ -285,7 +284,7 @@ nav {
     }
 }
 
-.third-section{
+.third-section {
     background-color: $color;
     color: $bgH;
     background-image: url(/styles/img/bg3.svg);
@@ -293,27 +292,27 @@ nav {
     background-size: cover;
     background-position: 42px -230px;
     z-index: 99;
-    @media screen and (max-width:900px) {
+    @media screen and (max-width: 900px) {
         background-position: -548px -148px;
     }
-    .flex{
-        @media screen and (max-width:900px) {
+    .flex {
+        @media screen and (max-width: 900px) {
             display: flex;
             flex-direction: column-reverse;
-        .img-fluid{
-            @media screen and (max-width:900px) {
-                margin-right: 29vw;
+            .img-fluid {
+                @media screen and (max-width: 900px) {
+                    margin-right: 29vw;
+                }
             }
-        }
         }
     }
 
-    form{
+    form {
         @media screen and (max-width: 800px) {
             flex-direction: column;
         }
 
-        .playstore{
+        .playstore {
             border: 1px solid $color;
             background: $hover;
             align-items: center;
@@ -327,11 +326,11 @@ nav {
             }
             @media screen and (max-width: 800px) {
                 width: 90%;
-                margin-right: 0px!important;
+                margin-right: 0px !important;
             }
         }
 
-        .applestore{
+        .applestore {
             border: 1px solid $color;
             background: $bgH;
             align-items: center;
@@ -345,11 +344,33 @@ nav {
             }
             @media screen and (max-width: 800px) {
                 width: 93%;
-                margin-top: 13px!important;
+                margin-top: 13px !important;
 
-                .app{
+                .app {
                     padding-left: 5vw;
                 }
+            }
+        }
+    }
+}
+.forth-section {
+    background-color: $bgH;
+
+    .container {
+        .row {
+            .h1 {
+                color: $color;
+            }
+        }
+        .accordion-item {
+            background-color: $bgH;
+            font-size: 25px;
+            border: 2px solid #f3ebde;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+                border: 2px solid #fdbd55;
             }
         }
     }
