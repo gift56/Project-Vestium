@@ -1,9 +1,8 @@
-$color: #020636;
-$hover: #d65123;
-$bgH: #f8f0e3;
+@import "./modules/classes";
+@import "./modules/varibles";
 nav {
     background-color: $bgH;
-    padding: 1em!important;
+    padding: 1em !important;
     .navbar-nav {
         margin: 0 auto;
 
@@ -15,51 +14,235 @@ nav {
                 color: $hover !important;
             }
         }
-        .right{
-            @media screen and (max-width:1200px) {
-                padding-left: 4vw!important;
+        .right {
+            @media screen and (max-width: 1200px) {
+                padding-left: 4vw !important;
             }
         }
         .left {
             padding-left: 4vw !important;
         }
     }
-    form{
-        @media screen and (max-width:800px) {
+    form {
+        @media screen and (max-width: 800px) {
             flex-direction: column;
         }
         .playstore {
             border: 1px solid $color;
             background: $color;
-            padding:  1vh 2vw;
+            padding: 1vh 2vw;
             align-items: center;
             line-height: 20px;
             color: white;
             border-radius: 15px;
             font-weight: 700;
-            &:hover{
-                color: $hover!important;;
+            &:hover {
+                color: $hover !important;
             }
-            @media screen and (max-width:800px) {
+            @media screen and (max-width: 800px) {
                 margin-bottom: 3vh;
                 width: 65%;
             }
         }
-        .applestore{
+        .applestore {
             border: 1px solid $color;
             background: $bgH;
             align-items: center;
             line-height: 20px;
-            padding:  1vh 2vw;
+            padding: 1vh 2vw;
             color: $color;
             border-radius: 15px;
             font-weight: 700;
-            &:hover{
-                color: $hover!important;;
+            &:hover {
+                color: $hover !important;
             }
-            @media screen and (max-width:800px) {
+            @media screen and (max-width: 800px) {
                 width: 65%;
             }
         }
+    }
+}
+.first-section {
+    background-color: $color;
+    color: $bgH;
+
+    .up {
+        padding-top: 15vh;
+        @media screen and (max-width: 1000px) {
+            padding: 0;
+        }
+    }
+    .row {
+        padding-bottom: 47vh;
+
+        .nav {
+            @media screen and (max-width: 1000px) {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+        }
+        .text1 {
+            background-color: rgba(248, 240, 227, 0.5);
+            color: $bgH;
+            font-weight: 600;
+            padding: 2px 1em;
+            border-radius: 15px;
+            width: 25vw;
+
+            .text {
+                padding-left: 17px;
+            }
+            @media screen and (max-width: 1350px) {
+                display: none;
+            }
+        }
+        .images {
+            margin-top: 14vh;
+            .avatar {
+                @media screen and (max-width: 1200px) {
+                    width: 107%;
+                }
+            }
+        }
+        h1 {
+            font-size: 48px;
+            span {
+                color: $hover;
+            }
+            @media screen and (max-width: 1000px) {
+                font-size: 28px;
+            }
+        }
+        p {
+            font-size: 18px;
+            font-weight: 600;
+            @media screen and (max-width: 1000px) {
+                font-size: 11px;
+            }
+        }
+
+        form {
+            .applestore {
+                border: 1px solid $color;
+                background: $hover;
+                align-items: center;
+                line-height: 20px;
+                padding: 1vh 2vw;
+                color: $bgH;
+                border-radius: 15px;
+                font-weight: 700;
+                &:hover {
+                    color: $color !important;
+                }
+                @media screen and (max-width: 1000px) {
+                    width: 90%;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        margin-right: 2px;
+                    }
+                }
+            }
+            .playstore {
+                border: 1px solid $color;
+                background: $bgH;
+                padding: 1vh 2vw;
+                align-items: center;
+                line-height: 20px;
+                color: $color;
+                border-radius: 15px;
+                font-weight: 700;
+                &:hover {
+                    color: $hover !important;
+                }
+                @media screen and (max-width: 1000px) {
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 2vh !important;
+                }
+            }
+            @media screen and (max-width: 1000px) {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}
+.second-section {
+    background-color: $bgH;
+    color: $color;
+    .phone{
+        position: relative;
+
+        img{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 2px;
+        }
+        @media screen and (max-width:1200px) {
+           img{
+            width: 66vw;
+            position: relative;
+            bottom: 45px;
+           }
+        }
+    }
+    .nav {
+        .h1 {
+            font-weight: 700;
+        }
+        .img {
+            padding: 3vh 0 0 0;
+        }
+    }
+    .text {
+        font-weight: 400 !important;
+
+        .nam {
+            font-weight: 700;
+        }
+    }
+    form {
+        .applestore {
+            border: 1px solid $color;
+            background: $color;
+            align-items: center;
+            line-height: 20px;
+            padding: 1vh 2vw;
+            color: white;
+            border-radius: 15px;
+            font-weight: 700;
+            &:hover {
+                color: $hover !important;
+                background-color: bisque;
+            }
+            @media screen and (max-width:800px) {
+                width: 92%;
+                margin-top: 3vh!important;
+            }
+           
+        }
+        .playstore {
+            border: 1px solid $hover;
+            background: $hover;
+            padding: 1vh 2vw;
+            align-items: center;
+            line-height: 20px;
+            color: $color;
+            border-radius: 15px;
+            font-weight: 700;
+            &:hover {
+                color: white !important;
+            }
+            
+        }
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+
     }
 }

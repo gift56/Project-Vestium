@@ -1,5 +1,5 @@
 nav {
-  background-color: #f8f0e3;
+  background-color: #F8F0e3;
   padding: 1em !important;
 }
 
@@ -62,7 +62,7 @@ nav form .playstore:hover {
 
 nav form .applestore {
   border: 1px solid #020636;
-  background: #f8f0e3;
+  background: #F8F0e3;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -80,6 +80,267 @@ nav form .applestore:hover {
 @media screen and (max-width: 800px) {
   nav form .applestore {
     width: 65%;
+  }
+}
+
+.first-section {
+  background-color: #020636;
+  color: #F8F0e3;
+}
+
+.first-section .up {
+  padding-top: 15vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .first-section .up {
+    padding: 0;
+  }
+}
+
+.first-section .row {
+  padding-bottom: 47vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .first-section .row .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.first-section .row .text1 {
+  background-color: rgba(248, 240, 227, 0.5);
+  color: #F8F0e3;
+  font-weight: 600;
+  padding: 2px 1em;
+  border-radius: 15px;
+  width: 25vw;
+}
+
+.first-section .row .text1 .text {
+  padding-left: 17px;
+}
+
+@media screen and (max-width: 1350px) {
+  .first-section .row .text1 {
+    display: none;
+  }
+}
+
+.first-section .row .images {
+  margin-top: 14vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .first-section .row .images .avatar {
+    width: 107%;
+  }
+}
+
+.first-section .row h1 {
+  font-size: 48px;
+}
+
+.first-section .row h1 span {
+  color: #d65123;
+}
+
+@media screen and (max-width: 1000px) {
+  .first-section .row h1 {
+    font-size: 28px;
+  }
+}
+
+.first-section .row p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+  .first-section .row p {
+    font-size: 11px;
+  }
+}
+
+.first-section .row form .applestore {
+  border: 1px solid #020636;
+  background: #d65123;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20px;
+  padding: 1vh 2vw;
+  color: #F8F0e3;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+.first-section .row form .applestore:hover {
+  color: #020636 !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .first-section .row form .applestore {
+    width: 90%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .first-section .row form .applestore img {
+    margin-right: 2px;
+  }
+}
+
+.first-section .row form .playstore {
+  border: 1px solid #020636;
+  background: #F8F0e3;
+  padding: 1vh 2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20px;
+  color: #020636;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+.first-section .row form .playstore:hover {
+  color: #d65123 !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .first-section .row form .playstore {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2vh !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .first-section .row form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.second-section {
+  background-color: #F8F0e3;
+  color: #020636;
+}
+
+.second-section .phone {
+  position: relative;
+}
+
+.second-section .phone img {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+  .second-section .phone img {
+    width: 66vw;
+    position: relative;
+    bottom: 45px;
+  }
+}
+
+.second-section .nav .h1 {
+  font-weight: 700;
+}
+
+.second-section .nav .img {
+  padding: 3vh 0 0 0;
+}
+
+.second-section .text {
+  font-weight: 400 !important;
+}
+
+.second-section .text .nam {
+  font-weight: 700;
+}
+
+.second-section form .applestore {
+  border: 1px solid #020636;
+  background: #020636;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20px;
+  padding: 1vh 2vw;
+  color: white;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+.second-section form .applestore:hover {
+  color: #d65123 !important;
+  background-color: bisque;
+}
+
+@media screen and (max-width: 800px) {
+  .second-section form .applestore {
+    width: 92%;
+    margin-top: 3vh !important;
+  }
+}
+
+.second-section form .playstore {
+  border: 1px solid #d65123;
+  background: #d65123;
+  padding: 1vh 2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20px;
+  color: #020636;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+.second-section form .playstore:hover {
+  color: white !important;
+}
+
+@media screen and (max-width: 800px) {
+  .second-section form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
