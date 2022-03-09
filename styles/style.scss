@@ -110,7 +110,7 @@ nav {
                 color: $hover;
             }
             .dress {
-                border: 1px solid $hover;
+                border: 3px solid $hover;
                 padding: 10px;
                 color: $bgH;
                 border-radius: 80%;
@@ -199,6 +199,7 @@ nav {
         }
     }
     .nav {
+        align-items: baseline;
         .h1 {
             font-weight: 700;
         }
@@ -395,6 +396,11 @@ footer {
                 align-items: baseline;
             }
 
+            .copy{
+                @media screen and (max-width:1200px) {
+                    font-size: 13px;
+                }
+            }
             .p {
                 font-size: 22px;
                 font-weight: 300;
@@ -429,6 +435,10 @@ footer {
                     margin-right: 1vw;
                     font-size: 25px;
                     font-weight: 300;
+                    @media screen and (max-width:1200px) {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
                 }
             }
            }

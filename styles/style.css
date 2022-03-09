@@ -152,7 +152,7 @@ nav form .applestore:hover {
 }
 
 .first-section .row h1 .dress {
-  border: 1px solid #d65123;
+  border: 3px solid #d65123;
   padding: 10px;
   color: #F8F0e3;
   border-radius: 80%;
@@ -286,6 +286,12 @@ nav form .applestore:hover {
     position: relative;
     bottom: 45px;
   }
+}
+
+.second-section .nav {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .second-section .nav .h1 {
@@ -539,6 +545,12 @@ footer .container .row .textss {
           align-items: baseline;
 }
 
+@media screen and (max-width: 1200px) {
+  footer .container .row .copy {
+    font-size: 13px;
+  }
+}
+
 footer .container .row .p {
   font-size: 22px;
   font-weight: 300;
@@ -595,5 +607,12 @@ footer .container .row .group .list-group .list-group-item {
   margin-right: 1vw;
   font-size: 25px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1200px) {
+  footer .container .row .group .list-group .list-group-item {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 /*# sourceMappingURL=style.css.map */

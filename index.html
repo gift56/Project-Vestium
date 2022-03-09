@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Landingpage</title>
     <link rel="stylesheet" href="/styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/css/animate.min.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <script src="/styles/js/wow.min.js"></script>
 </head>
 
 <body>
@@ -369,17 +371,35 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-xl-6">
-                    Copyright 2022 by Cre8ng- Home of Bezalel
+                <div class="col-xl-6 copy">
+                    &#169 Copyright 2022 by Cre8ng- Home of Bezalel
                 </div>
                 <div class="nav foot p-3 col-xl-6">
-                    Made with Portable Love of Eden 
+                    Made with Portable Love of Eden 	&#174
                 </div>
             </div>
         </div>
 
     </footer>
     <script src="/styles/js/bootstrap.bundle.js"></script>
+    <script>
+        var wow = new WOW(
+            {
+                boxClass: 'wow',      // animated element css class (default is wow)
+                animateClass: 'animate__animated', // animation css class (default is animated)
+                offset: 0,          // distance to the element when triggering the animation (default is 0)
+                mobile: true,       // trigger animations on mobile devices (default is true)
+                live: true,       // act on asynchronously loaded content (default is true)
+                callback: function (box) {
+                    // the callback is fired every time an animation is started
+                    // the argument that is passed in is the DOM node being animated
+                },
+                scrollContainer: null,    // optional scroll container selector, otherwise use window,
+                resetAnimation: false,     // reset animation on end (default is true)
+            }
+        );
+        wow.init();
+    </script>
 </body>
 
 </html>
