@@ -73,7 +73,11 @@ nav {
         }
     }
     .row {
-        padding-bottom: 47vh;
+        padding-bottom: 62vh;
+        padding-top: 12vh;
+        @media screen and (max-width:1000px) {
+            padding: 0 0;
+        }
 
         .nav {
             @media screen and (max-width: 1000px) {
@@ -188,7 +192,7 @@ nav {
             display: flex;
             align-items: center;
             justify-content: center;
-            bottom: 30px;
+            bottom: 116px;
         }
         @media screen and (max-width: 1200px) {
             img {
@@ -215,10 +219,13 @@ nav {
         }
     }
     .bottom {
-        margin-bottom: 20vh;
+        margin-bottom: 23vh;
+        @media screen and (max-width:1200px) {
+            margin-bottom: 5vh;
+        }
     }
     form {
-        padding-bottom: 12vh;
+        margin-top: 3vh;
         .applestore {
             border: 1px solid $color;
             background: $color;
@@ -267,10 +274,19 @@ nav {
             font-size: 18px;
             color: $color;
             font-weight: 600;
+            @media screen and (max-width:460px) {
+                font-size: 11px;
+            }
         }
 
         .check {
             align-items: center;
+            .img{
+                @media screen and (max-width:460px) {
+                    width: 7%;
+                    padding-top: 0;
+                }
+            }
         }
         .button {
             background-color: $color;
@@ -295,6 +311,10 @@ nav {
     z-index: 99;
     @media screen and (max-width: 900px) {
         background-position: -548px -148px;
+
+        .h1{
+            padding-top: 0px!important;
+        }
     }
     .flex {
         @media screen and (max-width: 900px) {
@@ -394,6 +414,10 @@ footer {
         .row {
             .textss {
                 align-items: baseline;
+
+                @media screen and (max-width:1200px) {
+                    margin-bottom: 1vh!important;
+                }
             }
 
             .copy{
