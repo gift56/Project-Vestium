@@ -476,8 +476,8 @@ nav form .applestore:hover {
   height: 29px;
   bottom: -15px;
   background: white;
-  -webkit-animation: animate 6s linear infinite;
-          animation: animate 6s linear infinite;
+  -webkit-animation: animate 50s linear infinite;
+          animation: animate 50s linear infinite;
   overflow: hidden;
 }
 
@@ -570,7 +570,7 @@ nav form .applestore:hover {
     left: 51%;
     width: 42%;
     height: 264px;
-    top: 1px;
+    top: 17px;
     background-color: #cacaca3d;
     border-radius: 238px 238px 0px 0px;
     -webkit-animation-delay: 1s;
@@ -609,13 +609,26 @@ nav form .applestore:hover {
     left: 2%;
     width: 42%;
     height: 264px;
-    top: 859px;
+    top: 821px;
     background-color: #cacaca3d;
     border-radius: 0px 0px 238px 238px;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
     opacity: 1;
     overflow-x: hidden;
+    -webkit-animation: arc 6s linear infinite;
+            animation: arc 6s linear infinite;
+  }
+}
+
+@keyframes arc {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
 }
 
@@ -624,6 +637,10 @@ nav form .applestore:hover {
     -webkit-transform: translateY(0) rotate(0deg);
             transform: translateY(0) rotate(0deg);
     opacity: 1;
+  }
+  25% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   50% {
     -webkit-transform: translateX(-100px);
@@ -636,8 +653,8 @@ nav form .applestore:hover {
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(-100px) rotate(0deg);
-            transform: translateY(-100px) rotate(0deg);
+    -webkit-transform: translateY(-1100px) rotate(0deg);
+            transform: translateY(-1100px) rotate(0deg);
     opacity: 0;
   }
 }
@@ -648,6 +665,10 @@ nav form .applestore:hover {
             transform: translateY(0) rotate(0deg);
     opacity: 1;
   }
+  25% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
   50% {
     -webkit-transform: translateX(-100px);
             transform: translateX(-100px);
@@ -659,8 +680,8 @@ nav form .applestore:hover {
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(-100px) rotate(0deg);
-            transform: translateY(-100px) rotate(0deg);
+    -webkit-transform: translateY(-1100px) rotate(0deg);
+            transform: translateY(-1100px) rotate(0deg);
     opacity: 0;
   }
 }
