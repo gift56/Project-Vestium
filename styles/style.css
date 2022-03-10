@@ -103,7 +103,7 @@ nav form .applestore:hover {
   padding-top: 12vh;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1190px) {
   .first-section .row {
     padding: 0 0;
   }
@@ -468,94 +468,118 @@ nav form .applestore:hover {
   overflow: hidden;
 }
 
-.third-section .animation .boxes li:nth-child(1) {
-  left: 85%;
-  width: 3%;
-  height: 32px;
-  border-radius: 100%;
-  bottom: -15px;
-  background-color: #d65123;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+@media screen and (min-width: 1200px) {
+  .third-section .animation .boxes li:nth-child(1) {
+    left: 85%;
+    width: 3%;
+    height: 32px;
+    border-radius: 100%;
+    bottom: -15px;
+    overflow-x: hidden;
+    background-color: #d65123;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+  }
 }
 
-.third-section .animation .boxes li:nth-child(2) {
-  left: 78%;
-  width: 3%;
-  border-radius: 100%;
-  height: 32px;
-  top: 853px;
-  background-color: #d65123;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+@media screen and (min-width: 1200px) {
+  .third-section .animation .boxes li:nth-child(2) {
+    left: 78%;
+    width: 3%;
+    border-radius: 100%;
+    height: 32px;
+    top: 853px;
+    background-color: #d65123;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    overflow-x: hidden;
+  }
 }
 
-.third-section .animation .boxes li:nth-child(3) {
-  left: 33%;
-  width: 3%;
-  border-radius: 100%;
-  height: 32px;
-  top: 547px;
-  background-color: #d65123;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: 14s;
-          animation-duration: 14s;
+@media screen and (min-width: 1200px) {
+  .third-section .animation .boxes li:nth-child(3) {
+    left: 33%;
+    width: 3%;
+    border-radius: 100%;
+    height: 32px;
+    top: 547px;
+    background-color: #d65123;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 14s;
+            animation-duration: 14s;
+    overflow-x: hidden;
+  }
 }
 
-.third-section .animation .boxes li:nth-child(4) {
-  left: -3%;
-  width: 3%;
-  border-radius: 100%;
-  height: 32px;
-  top: 644px;
-  background-color: #d65123;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+@media screen and (min-width: 1200px) {
+  .third-section .animation .boxes li:nth-child(4) {
+    left: -3%;
+    width: 3%;
+    border-radius: 100%;
+    height: 32px;
+    top: 644px;
+    background-color: #d65123;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    overflow-x: hidden;
+  }
 }
 
-.third-section .animation .boxes li:nth-child(5) {
-  left: 90%;
-  width: 3%;
-  height: 35px;
-  top: 644px;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+@media screen and (min-width: 1200px) {
+  .third-section .animation .boxes li:nth-child(5) {
+    left: 90%;
+    width: 3%;
+    height: 35px;
+    top: 644px;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    overflow-x: hidden;
+  }
 }
 
-.third-section .animation .boxes li:nth-child(6) {
-  left: 39%;
-  width: 3%;
-  height: 35px;
-  top: 965px;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+@media screen and (min-width: 1200px) {
+  .third-section .animation .boxes li:nth-child(6) {
+    left: 39%;
+    width: 3%;
+    height: 35px;
+    top: 965px;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    overflow-x: hidden;
+  }
 }
 
-.third-section .animation .boxes li:nth-child(7) {
-  left: 51%;
-  width: 47%;
-  height: 264px;
-  top: 1px;
-  background-color: #cacaca3d;
-  border-radius: 90% 90% 0 0;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  opacity: 1;
+@media screen and (min-width: 1200px) {
+  .third-section .animation .boxes li:nth-child(7) {
+    left: 51%;
+    width: 44%;
+    height: 264px;
+    top: 1px;
+    background-color: #cacaca3d;
+    border-radius: 238px 238px 0px 0px;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    opacity: 1;
+    overflow-x: hidden;
+  }
 }
 
-.third-section .animation .boxes li:nth-child(8) {
-  left: 2%;
-  width: 47%;
-  height: 264px;
-  top: 859px;
-  background-color: #cacaca3d;
-  border-radius: 0% 0% 90% 90%;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  opacity: 1;
+@media screen and (min-width: 1200px) {
+  .third-section .animation .boxes li:nth-child(8) {
+    left: 2%;
+    width: 44%;
+    height: 264px;
+    top: 859px;
+    background-color: #cacaca3d;
+    border-radius: 0px 0px 238px 238px;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    opacity: 1;
+    overflow-x: hidden;
+  }
 }
 
 @-webkit-keyframes animate {
