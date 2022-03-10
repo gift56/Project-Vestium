@@ -5,6 +5,6 @@
 #Finished section 3
 #Finished section 4
 #Finished footer
-It took me alot of courage in posting My First Transparent form,i Use it to test my ability in handling form.You can view My First Transparent form made with Bootstrap Framework on the link provided below:
+It took me alot of Effort & courage in posting My First Bootstrap project on Landingpage designed by a company UI/UX designers,It enabled me in practicing my ability in handling Bootstrap projects.You can view output At:
     <br/>
-    <a target="_blank" href="https://transparentformdesign.netlify.app/" style="color:green; font-size:25px;" >Vestium design</a>
+    <a target="_blank" href="https://transparentformdesign.netlify.app/" ><span  style="color:green; font-size:25px;">Vestium design</span></a>
