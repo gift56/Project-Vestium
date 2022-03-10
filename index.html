@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-xl navbar-light ">
             <div class="container">
-                <img src="/styles/img/logo.svg" alt="logo">
+                <img class="wow animate_animated animate__bounce" src="/styles/img/logo.svg" alt="logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -28,27 +28,27 @@
                             <a class="nav-link h6 right" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link h6 left" href="#">About</a>
+                            <a class="nav-link h6 left" href="#abt">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link h6 left" href="#">How it works</a>
+                            <a class="nav-link h6 left" href="#how">How it works</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link h6 left" href="#">FAQ</a>
+                            <a class="nav-link h6 left" href="#faq">FAQ</a>
                         </li>
                     </ul>
                     <form class="d-flex">
                         <button class="btn playstore me-4 nav" type="button">
                             <div class="me-3"><img src="/styles/img/goggleplaystore.svg" alt="goggleplaystore"></div>
                             <div>
-                                Download <br />
+                                Download <br/>
                                 on Android
                             </div>
                         </button>
                         <button class="btn applestore  nav" type="button">
                             <div class="me-3"><img src="/styles/img/appleplaystore.svg" alt="appleplaystore"></div>
                             <div>
-                                Download <br />
+                                Download <br/>
                                 on Apple
                             </div>
                         </button>
@@ -94,22 +94,24 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="images">
-                            <img class="img-fluid avatar" src="/styles/img/avatar girl.svg" alt="cartoonimage" />
+                            <img class="img-fluid avatar  wow animate_animated animate__fadeIn"
+                                src="/styles/img/avatar girl.svg" alt="cartoonimage" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container-fluid second-section">
+    <section class="container-fluid second-section" id="abt">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 phone">
-                    <img class="smartphone img-fluid" src="/styles/img/phonevetium.svg" alt="smartphone" />
+                    <img class="smartphone img-fluid wow animate_animated animate__fadeIn"
+                        src="/styles/img/phonevetium.svg" alt="smartphone" />
                 </div>
                 <div class="col-xl-6 mt-5 bottom">
                     <div class="nav">
-                        <div class="h1 px-3">About Us</div>
+                        <div class="h1 px-3" >About Us</div>
                         <div class="img"><img src="/styles/img/redcube.svg" alt="redcube"></div>
                     </div>
                     <div class="h3 mb-4 ">Smart Wear Virtual World</div>
@@ -154,10 +156,10 @@
                     </form>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="how">
                 <div class="col-xl-6 texts pt-5">
                     <div class="nav mb-4 middle">
-                        <div><img  src="/styles/img/redcube.svg" alt="redcube" /></div>
+                        <div><img src="/styles/img/redcube.svg" alt="redcube" /></div>
                         <span class="h1 px-3">How it works</span>
                     </div>
                     <div class="h6 mb-5">Ut enim ad minim veniam vUt enim ad the best <br />
@@ -187,7 +189,8 @@
                     </div>
                 </div>
                 <div class="col-xl-6">
-                    <img class="img-fluid" src="/styles/img/avatargirl2.svg" alt="avatar2">
+                    <img class="img-fluid wow animate_animated animate__fadeIn" src="/styles/img/avatargirl2.svg"
+                        alt="avatar2">
                 </div>
             </div>
         </div>
@@ -195,6 +198,20 @@
     <section class="container-fluid third-section">
         <div class="container flex">
             <div class="row text-center">
+                <div class="animation">
+                    <ul class="boxes">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
                 <div class="col-xl-12 pt-5 mt-5 mb-4 h1">
                     Take the next step into the virtual <br />
                     world with yourwears as you go
@@ -225,12 +242,13 @@
             </div>
             <div class="row">
                 <div class="col-xl-12 mt-5 mb-5 nav justify-content-center">
-                    <img class="img-fluid" src="/styles/img/sidephone.svg" alt="sidephone">
+                    <img class="img-fluid wow animate_animated animate__fadeIn" src="/styles/img/sidephone.svg"
+                        alt="sidephone">
                 </div>
             </div>
         </div>
     </section>
-    <section class="container-fluid forth-section">
+    <section class="container-fluid forth-section" id="faq">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 h1 mt-5 mb-5">Frequently asked questions</div>
@@ -375,7 +393,7 @@
                     &#169 Copyright 2022 by Cre8ng- Home of Bezalel
                 </div>
                 <div class="nav foot p-3 col-xl-6">
-                    Made with Portable Love of Eden 	&#174
+                    Made with Portable Love of Eden &#174
                 </div>
             </div>
         </div>
