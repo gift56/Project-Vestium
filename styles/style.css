@@ -1,3 +1,9 @@
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
 nav {
   background-color: #F8F0e3;
   padding: 1em !important;
@@ -205,7 +211,7 @@ nav form .applestore:hover {
 
 @media screen and (max-width: 1000px) {
   .first-section .row form .applestore {
-    width: 90%;
+    width: 250px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -245,6 +251,7 @@ nav form .applestore:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 250px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -350,7 +357,7 @@ nav form .applestore:hover {
 
 @media screen and (max-width: 800px) {
   .second-section form .applestore {
-    width: 92%;
+    width: 250px;
     margin-top: 3vh !important;
   }
 }
@@ -370,6 +377,12 @@ nav form .applestore:hover {
 
 .second-section form .playstore:hover {
   color: white !important;
+}
+
+@media screen and (max-width: 800px) {
+  .second-section form .playstore {
+    width: 250px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -555,7 +568,7 @@ nav form .applestore:hover {
 @media screen and (min-width: 1200px) {
   .third-section .animation .boxes li:nth-child(7) {
     left: 51%;
-    width: 44%;
+    width: 42%;
     height: 264px;
     top: 1px;
     background-color: #cacaca3d;
@@ -564,13 +577,37 @@ nav form .applestore:hover {
             animation-delay: 1s;
     opacity: 1;
     overflow-x: hidden;
+    -webkit-animation: arc 6s linear infinite;
+            animation: arc 6s linear infinite;
+  }
+}
+
+@-webkit-keyframes arc {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes arc {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .third-section .animation .boxes li:nth-child(8) {
     left: 2%;
-    width: 44%;
+    width: 42%;
     height: 264px;
     top: 859px;
     background-color: #cacaca3d;
@@ -674,7 +711,7 @@ nav form .applestore:hover {
 
 @media screen and (max-width: 800px) {
   .third-section form .playstore {
-    width: 90%;
+    width: 250px;
     margin-right: 0px !important;
   }
 }
@@ -698,7 +735,7 @@ nav form .applestore:hover {
 
 @media screen and (max-width: 800px) {
   .third-section form .applestore {
-    width: 93%;
+    width: 250px;
     margin-top: 13px !important;
   }
   .third-section form .applestore .app {
@@ -724,6 +761,10 @@ nav form .applestore:hover {
   background-color: #F8F0e3;
   font-size: 25px;
   border: 2px solid #f3ebde;
+}
+
+.forth-section .container .accordion-item button {
+  margin-bottom: 3vh;
 }
 
 .forth-section .container .accordion-item:focus {
