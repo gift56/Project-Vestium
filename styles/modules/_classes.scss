@@ -1,5 +1,101 @@
-.sticky{
+@import "varibles";
+.sticky {
     position: fixed;
     width: 100%;
     z-index: 2;
+}
+.animation {
+    @media screen and (max-width: 900px) {
+        .boxes {
+            li {
+                &:nth-child(1) {
+                    left: 78vw;
+                    top: -28vh;
+                    border-radius: 50%;
+                    background-color: $hover!important;
+                    animation: circle 10s linear infinite!important;
+                }
+                @keyframes circle {
+                    0%{
+                        transform: rotateX(0deg)!important;
+                    }
+                    25%{
+                        transform: translateX(-90px)!important;
+                        opacity: 1;
+                    }
+                    50%{
+                        transform: translateY(-900px)!important;
+                        opacity: 1;
+                    }
+                    75%{
+                        transform: translateX(-100px)!important;
+                        opacity: 1;
+                    }
+                    100%{
+                        transform: translateY(0deg)!important;
+                        opacity: 1;
+                    }
+                }
+                &:nth-child(2) {
+                    left: -2vw;
+                    top: 361px;
+                    border-radius: 50%;
+                    background-color: $hover!important;
+                }
+                @keyframes circle {
+                    0%{
+                        transform: rotateX(0deg)!important;
+                    }
+                    25%{
+                        transform: translateX(-90px)!important;
+                        opacity: 1;
+                    }
+                    50%{
+                        transform: translateY(-900px)!important;
+                        opacity: 1;
+                    }
+                    75%{
+                        transform: translateX(-100px)!important;
+                        opacity: 1;
+                    }
+                    100%{
+                        transform: translateY(0deg)!important;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 900px) {
+        .boxes {
+            li {
+                &:nth-child(1) {
+                    left: 78vw;
+                    top: 11vh;
+                    border-radius: 50%;
+                    background-color: $hover!important;
+                }
+                &:nth-child(2) {
+                    left: 0vw;
+                    top: 361px;
+                    border-radius: 50%;
+                    background-color: $hover!important;
+                }
+                &:nth-child(3) {
+                    left: 81vw;
+                    top: 361px;
+                }
+                &:nth-child(4) {
+                    left: 6vw;
+                    top: 944px;
+                }
+                &:nth-child(5) {
+                    left: 78vw;
+                    top: 944px;
+                    border-radius: 60%;
+                    background-color: $hover!important;
+                }
+            }
+        }
+    }
 }
