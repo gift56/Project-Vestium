@@ -577,8 +577,8 @@ nav form .applestore:hover {
             animation-delay: 1s;
     opacity: 1;
     overflow-x: hidden;
-    -webkit-animation: arc 6s linear infinite;
-            animation: arc 6s linear infinite;
+    -webkit-animation: arc 10s linear infinite;
+            animation: arc 10s linear infinite;
   }
 }
 
@@ -616,8 +616,8 @@ nav form .applestore:hover {
             animation-delay: 1s;
     opacity: 1;
     overflow-x: hidden;
-    -webkit-animation: arc 6s linear infinite;
-            animation: arc 6s linear infinite;
+    -webkit-animation: arc 10s linear infinite;
+            animation: arc 10s linear infinite;
   }
 }
 
