@@ -109,11 +109,33 @@ nav {
             }
         }
         h1 {
-            @media screen and (min-width:1200px) {
+            @media screen and (min-width: 1200px) {
                 font-size: 48px;
             }
-            span {
-                color: $hover;
+            .look {
+                color: $color;
+                -webkit-text-stroke: 0.1vw $hover;
+                height: 100%;
+                top: 0;
+                left: 0;
+                &::before {
+                    content: attr(data-text);
+                    color: $hover;
+                    -webkit-text-stroke: 0vw $color;
+                    position: absolute;
+                    border-right: 2px solid $hover;
+                    width: 0;
+                    overflow: hidden;
+                    animation: look 6s linear infinite;
+                }
+                @keyframes look {
+                    0%,10%,100% {
+                        width: 0;
+                    }
+                    70%,90%{
+                        width: 8%;
+                    }
+                }
             }
             .dress {
                 border: 3px solid $hover;

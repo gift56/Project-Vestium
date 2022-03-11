@@ -334,8 +334,42 @@ nav form .applestore:hover {
   }
 }
 
-.first-section .row h1 span {
+.first-section .row h1 .look {
+  color: #020636;
+  -webkit-text-stroke: 0.1vw #d65123;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.first-section .row h1 .look::before {
+  content: attr(data-text);
   color: #d65123;
+  -webkit-text-stroke: 0vw #020636;
+  position: absolute;
+  border-right: 2px solid #d65123;
+  width: 0;
+  overflow: hidden;
+  -webkit-animation: look 6s linear infinite;
+          animation: look 6s linear infinite;
+}
+
+@-webkit-keyframes look {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 8%;
+  }
+}
+
+@keyframes look {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 8%;
+  }
 }
 
 .first-section .row h1 .dress {
