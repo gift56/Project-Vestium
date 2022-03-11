@@ -582,11 +582,13 @@ nav form .applestore:hover {
   font-size: 18px;
   color: #020636;
   font-weight: 600;
+  padding-top: 25px;
 }
 
 @media screen and (max-width: 460px) {
   .second-section .texts .p {
     font-size: 11px;
+    padding-top: 0;
   }
 }
 
