@@ -5,7 +5,6 @@ nav {
     padding: 1em !important;
     .navbar-nav {
         margin: 0 auto;
-       
 
         .h6 {
             font-size: 20px;
@@ -330,15 +329,17 @@ nav {
             height: 100%;
 
             li {
-                position: absolute;
-                display: block;
-                list-style: none;
-                width: 35px;
-                height: 29px;
-                bottom: -15px;
-                background: white;
-                animation: animate 50s linear infinite;
-                overflow: hidden;
+                @media screen and (min-width: 1200px) {
+                    position: absolute;
+                    display: block;
+                    list-style: none;
+                    width: 35px;
+                    height: 29px;
+                    bottom: -15px;
+                    background: white;
+                    animation: animate 30s linear infinite !important;
+                    overflow: hidden;
+                }
 
                 &:nth-child(1) {
                     @media screen and (min-width: 1200px) {
@@ -421,7 +422,7 @@ nav {
                         animation-delay: 1s;
                         opacity: 1;
                         overflow-x: hidden;
-                        animation: arc 10s linear infinite;
+                        animation: arc 10s linear infinite !important;
                     }
                     @keyframes arc {
                         0% {
@@ -443,8 +444,7 @@ nav {
                         animation-delay: 1s;
                         opacity: 1;
                         overflow-x: hidden;
-                        animation: arc 10s linear infinite;
-
+                        animation: arc 10s linear infinite !important;
                     }
                     @keyframes arc {
                         0% {
@@ -456,25 +456,27 @@ nav {
                     }
                 }
             }
-            @keyframes animate {
-                0% {
-                    transform: translateY(0) rotate(0deg);
-                    opacity: 1;
-                }
-                25%{
-                    transform: rotateY(180deg);
-                }
-                50% {
-                    transform: translateX(-100px);
-                    opacity: 1;
-                }
-                75% {
-                    transform: translateX(150px) ;
-                    opacity: 1;
-                }
-                100% {
-                    transform: translateY(-1100px) rotate(0deg);
-                    opacity: 0;
+            @media screen and (min-width: 1200px) {
+                @keyframes animate {
+                    0% {
+                        transform: translateY(0) rotate(0deg);
+                        opacity: 1;
+                    }
+                    25% {
+                        transform: rotateY(180deg);
+                    }
+                    50% {
+                        transform: translateX(-100px);
+                        opacity: 1;
+                    }
+                    75% {
+                        transform: translateX(150px);
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: translateY(-1100px) rotate(0deg);
+                        opacity: 0;
+                    }
                 }
             }
         }
