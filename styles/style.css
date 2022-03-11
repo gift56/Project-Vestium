@@ -328,8 +328,10 @@ nav form .applestore:hover {
   }
 }
 
-.first-section .row h1 {
-  font-size: 48px;
+@media screen and (min-width: 1200px) {
+  .first-section .row h1 {
+    font-size: 48px;
+  }
 }
 
 .first-section .row h1 span {
@@ -345,7 +347,7 @@ nav form .applestore:hover {
 
 @media screen and (max-width: 1000px) {
   .first-section .row h1 {
-    font-size: 28px;
+    font-size: 26.5px;
   }
 }
 
@@ -356,7 +358,7 @@ nav form .applestore:hover {
 
 @media screen and (max-width: 1000px) {
   .first-section .row p {
-    font-size: 11px;
+    font-size: 10.7px;
   }
 }
 
@@ -468,7 +470,6 @@ nav form .applestore:hover {
 
 @media screen and (max-width: 1200px) {
   .second-section .phone img {
-    width: 66vw;
     position: relative;
     bottom: 45px;
   }

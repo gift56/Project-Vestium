@@ -109,7 +109,9 @@ nav {
             }
         }
         h1 {
-            font-size: 48px;
+            @media screen and (min-width:1200px) {
+                font-size: 48px;
+            }
             span {
                 color: $hover;
             }
@@ -120,14 +122,14 @@ nav {
                 border-radius: 80%;
             }
             @media screen and (max-width: 1000px) {
-                font-size: 28px;
+                font-size: 26.5px;
             }
         }
         p {
             font-size: 18px;
             font-weight: 600;
             @media screen and (max-width: 1000px) {
-                font-size: 11px;
+                font-size: 10.7px;
             }
         }
 
@@ -197,7 +199,6 @@ nav {
         }
         @media screen and (max-width: 1200px) {
             img {
-                width: 66vw;
                 position: relative;
                 bottom: 45px;
             }
