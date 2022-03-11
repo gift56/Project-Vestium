@@ -129,10 +129,13 @@ nav {
                     animation: look 6s linear infinite;
                 }
                 @keyframes look {
-                    0%,10%,100% {
+                    0%,
+                    10%,
+                    100% {
                         width: 0;
                     }
-                    70%,90%{
+                    70%,
+                    90% {
                         width: 8%;
                     }
                 }
@@ -198,10 +201,13 @@ nav {
                     align-items: center;
                     justify-content: center;
                     margin-top: 2vh !important;
+                    margin-right: 0 !important;
                 }
             }
             @media screen and (max-width: 1000px) {
                 flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
@@ -223,6 +229,10 @@ nav {
             img {
                 position: relative;
                 bottom: 45px;
+                margin-left: 6vw;
+                display: flex;
+                justify-content: center !important;
+                margin-right: 0 !important;
             }
         }
     }

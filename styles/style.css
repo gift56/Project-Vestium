@@ -355,19 +355,25 @@ nav form .applestore:hover {
 }
 
 @-webkit-keyframes look {
-  0%, 10%, 100% {
+  0%,
+  10%,
+  100% {
     width: 0;
   }
-  70%, 90% {
+  70%,
+  90% {
     width: 8%;
   }
 }
 
 @keyframes look {
-  0%, 10%, 100% {
+  0%,
+  10%,
+  100% {
     width: 0;
   }
-  70%, 90% {
+  70%,
+  90% {
     width: 8%;
   }
 }
@@ -467,6 +473,7 @@ nav form .applestore:hover {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 2vh !important;
+    margin-right: 0 !important;
   }
 }
 
@@ -476,6 +483,12 @@ nav form .applestore:hover {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -506,6 +519,14 @@ nav form .applestore:hover {
   .second-section .phone img {
     position: relative;
     bottom: 45px;
+    margin-left: 6vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin-right: 0 !important;
   }
 }
 
