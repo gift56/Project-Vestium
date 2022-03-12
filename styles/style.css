@@ -568,7 +568,7 @@ nav form .applestore:hover {
   .second-section .phone img {
     position: relative;
     bottom: 45px;
-    margin-left: 6vw;
+    margin-left: 3vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -688,19 +688,29 @@ nav form .applestore:hover {
   }
 }
 
-.second-section .texts .middle {
+@media screen and (max-width: 1200px) {
+  .second-section .two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 3vh;
+  }
+}
+
+.second-section .two .texts .middle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.second-section .texts .middle .h1 {
+.second-section .two .texts .middle .h1 {
   font-weight: 600;
   padding-left: 7px !important;
   color: #020636 !important;
 }
 
-.second-section .texts .p {
+.second-section .two .texts .p {
   font-size: 18px;
   color: #020636;
   font-weight: 600;
@@ -708,67 +718,53 @@ nav form .applestore:hover {
 }
 
 @media screen and (max-width: 460px) {
-  .second-section .texts .p {
+  .second-section .two .texts .p {
     font-size: 11px;
     padding-top: 0;
   }
 }
 
-.second-section .texts .check {
+.second-section .two .texts .check {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 @media screen and (max-width: 460px) {
-  .second-section .texts .check .img {
+  .second-section .two .texts .check .img {
     width: 7%;
     padding-top: 0;
   }
 }
 
-.second-section .texts .button {
+.second-section .two .texts .button {
   background-color: #020636;
   padding: 1em 53px;
   font-size: 20px;
   border-radius: 10px;
 }
 
-.second-section .texts .button:hover {
+.second-section .two .texts .button:hover {
   background-color: #3240df;
   color: black !important;
 }
 
-@media screen and (max-width: 1200px) {
-  .second-section .texts .button {
-    display: none;
+@media screen and (min-width: 1200px) {
+  .second-section .two .aaa img {
+    margin-left: 0;
   }
 }
 
-.second-section .but {
-  display: none;
-}
-
-@media screen and (max-width: 1200px) {
-  .second-section .but {
+@media screen and (min-width: 300px) {
+  .second-section .two .aaa img {
+    padding-left: 3vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #020636;
-    color: #F8F0e3;
-    padding: 1em 53px;
-    font-size: 20px;
-    border-radius: 10px;
-  }
-  .second-section .but:hover {
-    background-color: #3240df;
-    color: black !important;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-left: 3vw;
   }
 }
 

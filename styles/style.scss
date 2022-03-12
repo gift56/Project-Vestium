@@ -257,7 +257,7 @@ nav {
             img {
                 position: relative;
                 bottom: 45px;
-                margin-left: 6vw;
+                margin-left: 3vw;
                 display: flex;
                 justify-content: center !important;
                 margin-right: 0 !important;
@@ -335,64 +335,65 @@ nav {
         }
     }
 
-    .texts {
-        .middle {
-            align-items: center;
+    .two {
+        @media screen and (max-width: 1200px) {
+            flex-direction: column-reverse;
+            padding-bottom: 3vh;
+        }
+        .texts {
+            .middle {
+                align-items: center;
 
-            .h1 {
+                .h1 {
+                    font-weight: 600;
+                    padding-left: 7px !important;
+                    color: $color !important;
+                }
+            }
+            .p {
+                font-size: 18px;
+                color: $color;
                 font-weight: 600;
-                padding-left: 7px !important;
-                color: $color !important;
-            }
-        }
-        .p {
-            font-size: 18px;
-            color: $color;
-            font-weight: 600;
-            padding-top: 25px;
-            @media screen and (max-width: 460px) {
-                font-size: 11px;
-                padding-top: 0;
-            }
-        }
-
-        .check {
-            align-items: center;
-            .img {
+                padding-top: 25px;
                 @media screen and (max-width: 460px) {
-                    width: 7%;
+                    font-size: 11px;
                     padding-top: 0;
                 }
             }
-        }
-        .button {
-            background-color: $color;
-            padding: 1em 53px;
-            font-size: 20px;
-            border-radius: 10px;
-            &:hover {
-                background-color: #3240df;
-                color: black !important;
+
+            .check {
+                align-items: center;
+                .img {
+                    @media screen and (max-width: 460px) {
+                        width: 7%;
+                        padding-top: 0;
+                    }
+                }
             }
-            @media screen and (max-width: 1200px) {
-                display: none;
+            .button {
+                background-color: $color;
+                padding: 1em 53px;
+                font-size: 20px;
+                border-radius: 10px;
+                &:hover {
+                    background-color: #3240df;
+                    color: black !important;
+                }
             }
         }
-    }
-    .but {
-        display: none;
-        @media screen and (max-width: 1200px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $color;
-            color: $bgH;
-            padding: 1em 53px;
-            font-size: 20px;
-            border-radius: 10px;
-            &:hover {
-                background-color: #3240df;
-                color: black !important;
+        .aaa {
+            img {
+                @media screen and (min-width: 1200px) {
+                    margin-left: 0;
+                }
+
+                @media screen and (min-width: 300px) {
+                    padding-left: 3vw;
+                    display: flex;
+                    justify-self: center;
+                    align-self: center;
+                    margin-left: 3vw;
+                }
             }
         }
     }
