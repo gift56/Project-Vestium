@@ -298,12 +298,13 @@ nav form .applestore:hover {
 @media screen and (max-width: 1000px) {
   .first-section .row .nav {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 9vh;
   }
 }
 
@@ -322,6 +323,9 @@ nav form .applestore:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .first-section .row .nav .forward h1 {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -351,6 +355,7 @@ nav form .applestore:hover {
 @media screen and (max-width: 1200px) {
   .first-section .row .images .avatar {
     width: 107%;
+    margin-bottom: 10vh;
   }
 }
 
@@ -532,6 +537,7 @@ nav form .applestore:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 0;
   }
 }
 
