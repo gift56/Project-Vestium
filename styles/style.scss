@@ -763,10 +763,6 @@ nav {
 .third-section {
     background-color: $color;
     color: $bgH;
-    // background-image: url(/styles/img/bg3.svg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: 42px -230px;
     @media screen and (max-width: 900px) {
         background-position: -548px -148px;
 
@@ -792,7 +788,7 @@ nav {
                     height: 29px;
                     bottom: -15px;
                     background: white;
-                    animation: animate 30s linear infinite !important;
+                    animation: animate 24s linear infinite !important;
                     overflow: hidden;
                 }
 
@@ -929,7 +925,7 @@ nav {
                         opacity: 1;
                     }
                     100% {
-                        transform: translateY(-1100px) rotate(0deg);
+                        transform: translateY(-100px) rotate(0deg);
                         opacity: 0;
                     }
                 }
@@ -1093,9 +1089,9 @@ nav {
         position: relative;
         img{
             transform: translateY(10px);
-            animation: phone 5s linear forwards infinite;
+            animation: sidephone 5s linear forwards infinite;
         }
-        @keyframes phone {
+        @keyframes sidephone {
             from {
                 transform: translateY(-50px);
             }

@@ -1435,8 +1435,8 @@ nav form .applestore:hover {
     height: 29px;
     bottom: -15px;
     background: white;
-    -webkit-animation: animate 30s linear infinite !important;
-            animation: animate 30s linear infinite !important;
+    -webkit-animation: animate 24s linear infinite !important;
+            animation: animate 24s linear infinite !important;
     overflow: hidden;
   }
 }
@@ -1614,8 +1614,8 @@ nav form .applestore:hover {
       opacity: 1;
     }
     100% {
-      -webkit-transform: translateY(-1100px) rotate(0deg);
-              transform: translateY(-1100px) rotate(0deg);
+      -webkit-transform: translateY(-100px) rotate(0deg);
+              transform: translateY(-100px) rotate(0deg);
       opacity: 0;
     }
   }
@@ -1640,8 +1640,8 @@ nav form .applestore:hover {
       opacity: 1;
     }
     100% {
-      -webkit-transform: translateY(-1100px) rotate(0deg);
-              transform: translateY(-1100px) rotate(0deg);
+      -webkit-transform: translateY(-100px) rotate(0deg);
+              transform: translateY(-100px) rotate(0deg);
       opacity: 0;
     }
   }
@@ -1910,11 +1910,11 @@ nav form .applestore:hover {
 .third-section .phone img {
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
-  -webkit-animation: phone 5s linear forwards infinite;
-          animation: phone 5s linear forwards infinite;
+  -webkit-animation: sidephone 5s linear forwards infinite;
+          animation: sidephone 5s linear forwards infinite;
 }
 
-@-webkit-keyframes phone {
+@-webkit-keyframes sidephone {
   from {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
@@ -1926,7 +1926,7 @@ nav form .applestore:hover {
   }
 }
 
-@keyframes phone {
+@keyframes sidephone {
   from {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
