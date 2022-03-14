@@ -104,21 +104,59 @@ nav {
             font-weight: 600;
             padding: 2px 1em;
             border-radius: 15px;
-            width: 25vw;
+            width: 58%;
+            @media screen and (max-width: 318px) {
+                display: none;
+            }
+            @media screen and (max-width: 1000px) {
+                margin-left: 5%;
+            }
 
             .text {
                 padding-left: 17px;
+                @media screen and (max-width: 1200px) {
+                    font-size: 13px;
+                }
             }
-            @media screen and (max-width: 1350px) {
-                display: none;
+            @media screen and (max-width: 1200px) {
+                width: 266px;
+                flex-direction: row;
+                margin-top: 6vh;
+                align-items: center;
+                .img {
+                    position: absolute;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
-        .images {
-            margin-top: 14vh;
-            .avatar {
-                @media screen and (max-width: 1200px) {
-                    width: 107%;
-                    margin-bottom: 10vh;
+        .ava {
+            @media screen and (max-width: 1000px) {
+                transform: translateY(-66px);
+            }
+            .images {
+                margin-top: 14vh;
+                position: relative;
+                .avatar {
+                    position: inherit;
+                    top: 15%;
+                    animation: avatar 5s linear forwards infinite;
+                    animation-delay: 2s;
+
+                    @media screen and (max-width: 1200px) {
+                        width: 107%;
+                        margin-bottom: 10vh;
+                        margin-top: 4vh;
+                    }
+                }
+                @keyframes avatar {
+                    from {
+                        transform: translateY(-50px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
                 }
             }
         }
@@ -187,55 +225,246 @@ nav {
         form {
             padding-bottom: 12vh;
             .applestore {
-                border: 1px solid $color;
-                background: $hover;
-                padding: 1vh 2vw;
-                align-items: center;
-                line-height: 20px;
-
-                color: $bgH;
-                border-radius: 15px;
-                font-weight: 700;
-                &:hover {
-                    color: $color !important;
-                }
-                @media screen and (max-width: 1000px) {
-                    width: 250px;
-                    flex-direction: row;
+                @media screen and (max-width:199px) {
+                    background: $hover;
+                    border-radius: 15px;
+                    color: $bgH;
                     align-items: center;
+                    border: 1px solid $color;
+                    font-weight: 700;
+                    padding: 1vh 2vw;
+                    margin-top: 0 !important;
+                    margin-right: 0 !important;
                     justify-content: center;
-
-                    img {
-                        margin-right: 2px;
+                    width: 150px;
+                    flex-direction: row;
+                }
+                @media screen and (min-width: 200px) {
+                    background: $hover;
+                    border-radius: 15px;
+                    color: $bgH;
+                    align-items: center;
+                    border: 1px solid $color;
+                    font-weight: 700;
+                    padding: 1vh 2vw;
+                    margin-top: 0 !important;
+                    justify-content: center;
+                    width: 199px;
+                    flex-direction: row;
+                }
+                @media screen and (min-width: 320px) {
+                    background: $hover;
+                    border-radius: 15px;
+                    color: $bgH;
+                    align-items: center;
+                    border: 1px solid $color;
+                    font-weight: 700;
+                    padding: 1vh 2vw;
+                    margin-top: 0 !important;
+                    justify-content: center;
+                    width: 141px;
+                    flex-direction: row;
+                }
+                @media screen and (min-width: 336px) {
+                    background: $hover;
+                    border-radius: 15px;
+                    color: $bgH;
+                    align-items: center;
+                    border: 1px solid $color;
+                    font-weight: 700;
+                    padding: 1vh 2vw;
+                    margin-top: 0 !important;
+                    justify-content: center;
+                    width: 144px;
+                    flex-direction: row;
+                }
+                @media screen and (min-width: 400px) {
+                    background: $hover;
+                    border-radius: 15px;
+                    color: $bgH;
+                    align-items: center;
+                    border: 1px solid $color;
+                    font-weight: 700;
+                    padding: 1vh 2vw;
+                    margin-top: 0 !important;
+                    justify-content: center;
+                    width: 148px;
+                    flex-direction: row;
+                }
+                @media screen and (min-width: 450px) {
+                    background: $hover;
+                    border-radius: 15px;
+                    color: $bgH;
+                    align-items: center;
+                    border: 1px solid $color;
+                    font-weight: 700;
+                    padding: 1vh 2vw;
+                    margin-top: 0 !important;
+                    justify-content: center;
+                    width: 162px;
+                    flex-direction: row;
+                    .ap {
+                        font-size: 14px;
+                    }
+                }
+                @media screen and (min-width: 1000px) {
+                    border: 1px solid $color;
+                    background: $hover;
+                    padding: 1vh 2vw;
+                    align-items: center;
+                    line-height: 20px;
+                    color: $bgH;
+                    border-radius: 15px;
+                    font-weight: 700;
+                    width: 213px;
+                    margin-top: 3vh !important;
+                    height: 10vh;
+                    &:hover {
+                        color: $color !important;
+                    }
+                    .ap {
+                        font-size: 1rem;
                     }
                 }
             }
             .playstore {
-                border: 1px solid $color;
-                background: $bgH;
-                padding: 1vh 2vw;
-                align-items: center;
-                line-height: 20px;
-                color: $color;
-                border-radius: 15px;
-                font-weight: 700;
-                &:hover {
-                    color: $hover !important;
-                }
-                @media screen and (max-width: 1000px) {
-                    flex-direction: row;
-                    width: 250px;
+                @media screen and (max-width:199px) {
+                    background: $bgH;
+                    border-radius: 15px;
+                    color: $color;
                     align-items: center;
-                    justify-content: center;
-                    margin-top: 2vh !important;
+                    border: 1px solid $color;
+                    font-weight: 700;
+                    padding: 1vh 2vw;
+                    margin-top: 0 !important;
                     margin-right: 0 !important;
+                    justify-content: center;
+                    width: 150px;
+                    flex-direction: row;
+                }
+                @media screen and (min-width: 200px) {
+                    background: $bgH;
+                    border-radius: 15px;
+                    color: $color;
+                    align-items: center;
+                    border: 1px solid $color;
+                    font-weight: 700;
+                    padding: 1vh 2vw;
+                    margin-top: 0 !important;
+                    margin-right: 0 !important;
+                    justify-content: center;
+                    width: 199px;
+                    flex-direction: row;
+                }
+                @media screen and (min-width: 320px) {
+                    background: $bgH;
+                    border-radius: 15px;
+                    color: $color;
+                    align-items: center;
+                    border: 1px solid $color;
+                    font-weight: 700;
+                    padding: 1vh 2vw;
+                    margin-top: 0 !important;
+                    margin-right: 0 !important;
+                    width: 156px;
+                    flex-direction: row;
+                }
+                @media screen and (min-width: 390px) {
+                    background: $bgH;
+                    border-radius: 15px;
+                    color: $color;
+                    align-items: center;
+                    border: 1px solid $color;
+                    font-weight: 700;
+                    padding: 1vh 2vw;
+                    margin-top: 0 !important;
+                    margin-right: 0 !important;
+                    width: 159px;
+                    flex-direction: row;
+                }
+                @media screen and (min-width: 470px) {
+                    background: $bgH;
+                    border-radius: 15px;
+                    color: $color;
+                    align-items: center;
+                    border: 1px solid $color;
+                    font-weight: 700;
+                    padding: 1vh 2vw;
+                    margin-top: 0 !important;
+                    margin-right: 0 !important;
+                    width: 170px;
+                    flex-direction: row;
+                }
+                @media screen and (min-width: 510px) {
+                    background: $bgH;
+                    border-radius: 15px;
+                    color: $color;
+                    align-items: center;
+                    border: 1px solid $color;
+                    font-weight: 700;
+                    padding: 1vh 2vw;
+                    margin-top: 0 !important;
+                    margin-right: 0 !important;
+                    width: 174px;
+                    flex-direction: row;
+                    .ap {
+                        font-size: 14px;
+                    }
+                }
+                @media screen and (min-width: 1000px) {
+                    border: 1px solid $color;
+                    background: $bgH;
+                    padding: 1vh 2vw;
+                    align-items: center;
+                    line-height: 20px;
+                    color: $color;
+                    border-radius: 15px;
+                    margin-right: 3vw !important;
+                    font-weight: 700;
+                    width: 223px;
+                    margin-top: 3vh !important;
+                    height: 10vh;
+                    &:hover {
+                        color: $hover !important;
+                    }
+                    .ap {
+                        font-size: 1rem;
+                    }
                 }
             }
-            @media screen and (max-width: 1000px) {
-                flex-direction: column-reverse;
+            @media screen and (max-width: 320px) {
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 padding-bottom: 0;
+                gap: 3vh;
+            }
+            @media screen and (min-width: 319px) {
+                flex-direction: row;
+                gap: 3vw;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 0;
+                margin-top: 4%;
+                width: 100%;
+            }
+            @media screen and (min-width: 575px) {
+                flex-direction: row;
+                gap: 3vw;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 0;
+                margin-top: 4%;
+                width: 130%;
+            }
+            @media screen and (min-width: 1000px) {
+                flex-direction: row;
+                gap: 0;
+                justify-content: flex-start;
+                margin-bottom: 14vh;
+                align-items: center;
+                padding-bottom: 0;
+                margin-top: 0;
             }
         }
     }
@@ -247,16 +476,16 @@ nav {
         position: relative;
 
         img {
-            position: absolute;
+            transform: translateY(-333px);
             display: flex;
             align-items: center;
             justify-content: center;
-            bottom: 116px;
+            animation: phone 5s linear forwards infinite;
+            animation-delay: 4s;
         }
         @media screen and (max-width: 1200px) {
             img {
-                position: relative;
-                bottom: 45px;
+                transform: translateY(-60px);
                 margin-left: 3vw;
                 display: flex;
                 justify-content: center !important;
@@ -264,6 +493,29 @@ nav {
             }
         }
     }
+    @media screen and (min-width: 1200px) {
+        @keyframes phone {
+            from {
+                transform: translateY(-350px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(-320px);
+            }
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        @keyframes phone {
+            from {
+                transform: translateY(-60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+
     .nav {
         align-items: baseline;
         .h1 {
@@ -291,47 +543,144 @@ nav {
         }
     }
     form {
-        margin-top: 3vh;
+        padding-bottom: 12vh;
         .applestore {
-            border: 1px solid $color;
-            background: $color;
-            align-items: center;
-            line-height: 20px;
-            padding: 1vh 2vw;
-            color: white;
-            border-radius: 15px;
-            font-weight: 700;
-            &:hover {
-                color: $hover !important;
+            @media screen and (max-width:199px) {
+                background: $color;
+                border-radius: 15px;
+                color: $bgH;
+                align-items: center;
+                border: 1px solid $color;
+                font-weight: 700;
+                padding: 1vh 2vw;
+                margin-top: 0 !important;
+                margin-right: 0 !important;
+                justify-content: center;
+                width: 150px;
+                flex-direction: row;
             }
-            @media screen and (max-width: 800px) {
-                width: 250px;
-                padding: 6px;
+            @media screen and (min-width: 200px) {
+                background: $color;
+                border-radius: 15px;
+                color: $bgH;
+                align-items: center;
+                border: 1px solid $color;
+                font-weight: 700;
+                padding: 1vh 2vw;
+                margin-top: 0 !important;
+                justify-content: center;
+                width: 232px;
+                flex-direction: row;
+            }
+            @media screen and (min-width: 320px) {
+                width: 141px;
+                font-size: 13px;
+            }
+            @media screen and (min-width: 336px) {
+                width: 144px;
+            }
+            @media screen and (min-width: 400px) {
+                width: 148px;
+            }
+            @media screen and (min-width: 450px) {
+                width: 173px;
+                font-size: 1rem;
+            }
+            @media screen and (min-width: 683px) {
+                font-size: 15px;
+            }
+            @media screen and (min-width: 1000px) {
+                width: 213px;
                 margin-top: 3vh !important;
+                height: 11vh;
+                font-size: 1rem;
+                &:hover {
+                    color: $hover !important;
+                }
             }
         }
         .playstore {
-            border: 1px solid $hover;
-            background: $hover;
-            padding: 1vh 2vw;
-            align-items: center;
-            line-height: 20px;
-            color: $color;
-            border-radius: 15px;
-            font-weight: 700;
-
-            &:hover {
-                color: white !important;
-            }
-            @media screen and (max-width: 800px) {
-                width: 250px;
+            @media screen and (max-width:199px) {
+                background: $hover;
+                border-radius: 15px;
+                color: $color;
+                align-items: center;
+                border: 1px solid $color;
+                font-weight: 700;
+                padding: 1vh 2vw;
+                margin-top: 0 !important;
                 margin-right: 0 !important;
+                justify-content: center;
+                width: 150px;
+                flex-direction: row;
+            }
+            @media screen and (min-width: 200px) {
+                background: $hover;
+                border-radius: 15px;
+                color: $color;
+                align-items: center;
+                border: 1px solid $color;
+                font-weight: 700;
+                padding: 1vh 2vw;
+                margin-top: 0 !important;
+                margin-right: 0 !important;
+                justify-content: center;
+                width: 230px;
+                flex-direction: row;
+            }
+            @media screen and (min-width: 320px) {
+                width: 156px;
+                height: 69px;
+                font-size: 13px;
+            }
+            @media screen and (min-width: 390px) {
+                width: 159px;
+            }
+            @media screen and (min-width: 470px) {
+                width: 170px;
+            }
+            @media screen and (min-width: 510px) {
+                width: 184px;
+                font-size: 1rem;
+            }
+            @media screen and (min-width: 1000px) {
+                margin-right: 3vw !important;
+                margin-top: 3vh !important;
+                width: 223px;
+                height: 11vh;
+                font-size: 1rem;
+                &:hover {
+                    color: $bgH !important;
+                }
             }
         }
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 320px) {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-bottom: 0;
+            gap: 3vh;
+            margin-top: 5vh;
+        }
+        @media screen and (min-width: 319px) {
+            flex-direction: row;
+            gap: 3vw;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0;
+            margin-top: 4%;
+            width: 107%;
+        }
+        @media screen and (min-width: 410px) {
+            width: 100%;
+            margin-top: 8vh;
+        }
+
+        @media screen and (min-width: 1000px) {
+            gap: 0;
+            margin-top: 9vh;
+            justify-content: flex-start;
+            margin-bottom: 14vh;
         }
     }
 
@@ -379,13 +728,16 @@ nav {
                     background-color: #3240df;
                     color: black !important;
                 }
+    
+                    margin-bottom: 7vh;
             }
         }
         .aaa {
+            position: relative;
             img {
-                @media screen and (min-width: 1200px) {
-                    margin-left: 0;
-                }
+                margin-left: 0;
+                position: inherit;
+                animation: avatar 5s linear forwards infinite;
 
                 @media screen and (min-width: 300px) {
                     padding-left: 3vw;
@@ -393,6 +745,15 @@ nav {
                     justify-self: center;
                     align-self: center;
                     margin-left: 3vw;
+                }
+            }
+            @keyframes avatar {
+                from {
+                    transform: translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
                 }
             }
         }
@@ -487,7 +848,7 @@ nav {
                 }
                 &:nth-child(5) {
                     @media screen and (min-width: 1200px) {
-                        left: 90%;
+                        left: 86%;
                         width: 3%;
                         height: 35px;
                         top: 644px;
@@ -588,48 +949,144 @@ nav {
     }
 
     form {
-        @media screen and (max-width: 800px) {
-            flex-direction: column;
-        }
-
-        .playstore {
-            border: 1px solid $color;
-            background: $hover;
-            align-items: center;
-            line-height: 20px;
-            padding: 1vh 2vw;
-            color: white;
-            border-radius: 15px;
-            font-weight: 700;
-            &:hover {
-                color: $color !important;
-            }
-            @media screen and (max-width: 800px) {
-                width: 250px;
-                margin-right: 0px !important;
-            }
-        }
-
+        padding-bottom: 12vh;
         .applestore {
-            border: 1px solid $color;
-            background: $bgH;
-            align-items: center;
-            line-height: 20px;
-            padding: 1vh 2vw;
-            color: $color;
-            border-radius: 15px;
-            font-weight: 700;
-            &:hover {
-                color: $hover !important;
+            @media screen and (max-width:199px) {
+                background: $bgH;
+                border-radius: 15px;
+                color: $color;
+                align-items: center;
+                border: 1px solid $color;
+                font-weight: 700;
+                padding: 1vh 2vw;
+                margin-top: 0 !important;
+                margin-right: 0 !important;
+                justify-content: center;
+                width: 150px;
+                flex-direction: row;
             }
-            @media screen and (max-width: 800px) {
-                width: 250px;
-                margin-top: 13px !important;
-
-                .app {
-                    padding-left: 5vw;
+            @media screen and (min-width: 200px) {
+                background: $bgH;
+                border-radius: 15px;
+                color: $color;
+                align-items: center;
+                border: 1px solid $color;
+                font-weight: 700;
+                padding: 1vh 2vw;
+                margin-top: 0 !important;
+                justify-content: center;
+                width: 232px;
+                flex-direction: row;
+            }
+            @media screen and (min-width: 320px) {
+                width: 141px;
+                font-size: 13px;
+            }
+            @media screen and (min-width: 336px) {
+                width: 144px;
+            }
+            @media screen and (min-width: 400px) {
+                width: 148px;
+            }
+            @media screen and (min-width: 450px) {
+                width: 173px;
+                font-size: 1rem;
+            }
+            @media screen and (min-width: 683px) {
+                font-size: 15px;
+            }
+            @media screen and (min-width: 1000px) {
+                width: 213px;
+                margin-top: 3vh !important;
+                height: 11vh;
+                font-size: 1rem;
+                &:hover {
+                    color: $hover !important;
                 }
             }
+        }
+        .playstore {
+            @media screen and (max-width:199px) {
+                background: $hover;
+                border-radius: 15px;
+                color: $bgH;
+                align-items: center;
+                border: 1px solid $color;
+                font-weight: 700;
+                padding: 1vh 2vw;
+                margin-top: 0 !important;
+                margin-right: 0 !important;
+                justify-content: center;
+                width: 150px;
+                flex-direction: row;
+            }
+            @media screen and (min-width: 200px) {
+                background: $hover;
+                border-radius: 15px;
+                color: $bgH;
+                align-items: center;
+                border: 1px solid $color;
+                font-weight: 700;
+                padding: 1vh 2vw;
+                margin-top: 0 !important;
+                margin-right: 0 !important;
+                justify-content: center;
+                width: 230px;
+                flex-direction: row;
+            }
+            @media screen and (min-width: 320px) {
+                width: 156px;
+                height: 69px;
+                font-size: 13px;
+            }
+            @media screen and (min-width: 390px) {
+                width: 159px;
+            }
+            @media screen and (min-width: 470px) {
+                width: 170px;
+            }
+            @media screen and (min-width: 510px) {
+                width: 184px;
+                font-size: 1rem;
+            }
+            @media screen and (min-width: 1000px) {
+                margin-right: 3vw !important;
+                margin-top: 3vh !important;
+                width: 223px;
+                height: 11vh;
+                font-size: 1rem;
+                &:hover {
+                    color: $color !important;
+                }
+            }
+        }
+        @media screen and (max-width: 320px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0;
+            gap: 3vh;
+            margin-top: 5vh;
+        }
+        @media screen and (min-width: 319px) {
+            flex-direction: row;
+            gap: 3vw;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0;
+            margin-top: 4%;
+            width: 107%;
+        }
+        @media screen and (min-width: 410px) {
+            width: 100%;
+            margin-top: 8vh;
+        }
+
+        @media screen and (min-width: 1000px) {
+            gap: 0;
+            margin-top: 9vh;
+            justify-content: flex-start;
+            margin-bottom: 14vh;
         }
     }
 }
