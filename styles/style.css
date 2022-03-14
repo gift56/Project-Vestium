@@ -1903,6 +1903,41 @@ nav form .applestore:hover {
   }
 }
 
+.third-section .phone {
+  position: relative;
+}
+
+.third-section .phone img {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-animation: phone 5s linear forwards infinite;
+          animation: phone 5s linear forwards infinite;
+}
+
+@-webkit-keyframes phone {
+  from {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes phone {
+  from {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .forth-section {
   background-color: #F8F0e3;
 }
