@@ -578,7 +578,7 @@ nav form .applestore:hover {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 329px) {
   .first-section .row form .applestore {
     background: #d65123;
     border-radius: 15px;
@@ -745,7 +745,7 @@ nav form .applestore:hover {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 329px) {
   .first-section .row form .playstore {
     background: #F8F0e3;
     border-radius: 15px;
@@ -857,7 +857,7 @@ nav form .applestore:hover {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 329px) {
   .first-section .row form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -874,7 +874,7 @@ nav form .applestore:hover {
   }
 }
 
-@media screen and (min-width: 319px) {
+@media screen and (min-width: 330px) {
   .first-section .row form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
