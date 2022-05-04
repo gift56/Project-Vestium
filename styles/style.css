@@ -436,6 +436,29 @@ nav form .applestore:hover {
   }
 }
 
+.first-section .row h1 {
+  height: 119px;
+}
+
+@media screen and (min-width: 1000px) {
+  .first-section .row h1 {
+    height: auto;
+  }
+}
+
+.first-section .row h1 .changer {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  display: block;
+}
+
+@media screen and (min-width: 1000px) {
+  .first-section .row h1 .changer {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .first-section .row h1 {
     font-size: 48px;

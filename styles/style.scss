@@ -161,6 +161,17 @@ nav {
             }
         }
         h1 {
+            height: 119px;
+            @media screen and (min-width:1000px) {
+                height: auto;
+            }
+            .changer {
+                transform: translateY(-25px);
+                display: block;
+                @media screen and (min-width:1000px) {
+                    transform: none;
+                }
+            }
             @media screen and (min-width: 1200px) {
                 font-size: 48px;
             }
@@ -225,7 +236,7 @@ nav {
         form {
             padding-bottom: 12vh;
             .applestore {
-                @media screen and (max-width:199px) {
+                @media screen and (max-width: 199px) {
                     background: $hover;
                     border-radius: 15px;
                     color: $bgH;
@@ -328,7 +339,7 @@ nav {
                 }
             }
             .playstore {
-                @media screen and (max-width:199px) {
+                @media screen and (max-width: 199px) {
                     background: $bgH;
                     border-radius: 15px;
                     color: $color;
@@ -545,7 +556,7 @@ nav {
     form {
         padding-bottom: 12vh;
         .applestore {
-            @media screen and (max-width:199px) {
+            @media screen and (max-width: 199px) {
                 background: $color;
                 border-radius: 15px;
                 color: $bgH;
@@ -600,7 +611,7 @@ nav {
             }
         }
         .playstore {
-            @media screen and (max-width:199px) {
+            @media screen and (max-width: 199px) {
                 background: $hover;
                 border-radius: 15px;
                 color: $color;
@@ -732,8 +743,8 @@ nav {
                     background-color: #3240df;
                     color: black !important;
                 }
-    
-                    margin-bottom: 7vh;
+
+                margin-bottom: 7vh;
             }
         }
         .aaa {
@@ -951,7 +962,7 @@ nav {
     form {
         padding-bottom: 12vh;
         .applestore {
-            @media screen and (max-width:199px) {
+            @media screen and (max-width: 199px) {
                 background: $bgH;
                 border-radius: 15px;
                 color: $color;
@@ -978,7 +989,7 @@ nav {
                 width: 232px;
                 flex-direction: row;
             }
-            
+
             @media screen and (min-width: 339px) {
                 width: 165px;
             }
@@ -1003,7 +1014,7 @@ nav {
             }
         }
         .playstore {
-            @media screen and (max-width:199px) {
+            @media screen and (max-width: 199px) {
                 background: $hover;
                 border-radius: 15px;
                 color: $bgH;
@@ -1096,9 +1107,9 @@ nav {
             margin-bottom: 14vh;
         }
     }
-    .phone{
+    .phone {
         position: relative;
-        img{
+        img {
             transform: translateY(10px);
             animation: sidephone 5s linear forwards infinite;
         }
